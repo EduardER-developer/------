@@ -69,7 +69,7 @@ nav {
 }
 
 nav a img {
-    width: 103px;
+    width: 100px;
     height: 86.5px;
     justify-content: left;
 }
@@ -309,9 +309,19 @@ h4 {
 
 /* Адаптив */
 
-@media (max-width: 1400px) {
+@media (min-width: 1280px) {
     .container {
-        padding: 0 20px;
+        padding: 0 10px;
+    }
+    .first-block p {
+        font-size: 28px;
+        left: 7%;
+    }
+    .b2023 {
+        top: 2675px;
+    }
+    .b140 {
+        top: 3165px;
     }
 }
 
@@ -321,7 +331,7 @@ h4 {
     }
     .first-block p {
         font-size: 28px;
-        left: 100px;
+        left: 200px;
     }
 }
 
@@ -366,9 +376,28 @@ h4 {
     .catalog .first-block-catalog {
         width: 100%;
     }
+    
+    .appli {
+        margin: 10px, 0;
+    }
 }
 
 @media (max-width: 768px) {
+    main .container .first-block img {
+        width: 370px;
+        height: 300px;
+        z-index: 1;
+    }
+    .first-block p{
+        position: absolute;
+        width: 80%;
+        top: 430px;
+        left: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        z-index: 2;
+    }
     .first-block p {
         font-size: 20px;
     }
@@ -376,8 +405,12 @@ h4 {
         align-items: center;
     }
     nav a img {
+        display: flex;
         width: 80px;
+        margin-left: 100px;
+        justify-content: center;
         height: auto;
+        
     }
     .nav-list li {
         margin-right: 10px;
@@ -385,6 +418,12 @@ h4 {
     .appli {
         padding: 5px 10px;
         font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    .email {
+        margin-top: 10px;
+        margin-bottom: 7px;
     }
     .catalog h4 {
         font-size: 18px;
@@ -407,11 +446,19 @@ h4 {
         left: auto;
         width: 100%;
     }
+    .fourth-block img{
+        width: 370px;
+        height: 200px;
+    }
+
+    .second-block .second, .second-block .third {
+        padding-left: 0px;
+    }
 }
 
 @media (max-width: 576px) {
     .first-block p {
-        font-size: 18px;
+        font-size: 14px;
     }
     .second-block h3 {
         font-size: 22px;
