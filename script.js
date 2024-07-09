@@ -51,3 +51,33 @@ window.onload = checkScreenSize;
 
 // Вызываем функцию при изменении размера окна
 window.addEventListener('resize', checkScreenSize);
+
+
+
+
+// Получаем элементы
+const openButton = document.querySelector('.appli'); // Кнопка для открытия формы
+const closeButton = document.querySelector('.close-popup'); // Кнопка для закрытия формы
+const popup = document.querySelector('.popup'); // Сама форма
+
+// Функция для открытия формы
+function openPopup() {
+  popup.style.display = 'block';
+}
+
+// Функция для закрытия формы
+function closePopup() {
+  popup.style.display = 'none';
+}
+
+// Добавляем обработчики событий
+openButton.addEventListener('click', openPopup);
+closeButton.addEventListener('click', closePopup);
+
+// Дополнительно: закрытие формы по клику вне её
+popup.addEventListener('click', function(event) {
+  if (event.target === popup) {
+    closePopup();
+  }
+});
+

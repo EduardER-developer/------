@@ -71,7 +71,7 @@ nav {
 nav a img {
     width: 100px;
     height: 86.5px;
-    justify-content: left;
+    
 }
 
 nav .appli {
@@ -313,6 +313,7 @@ h4 {
     .container {
         padding: 0 10px;
     }
+
     .first-block p {
         font-size: 28px;
         left: 7%;
@@ -405,12 +406,13 @@ h4 {
         align-items: center;
     }
     nav a img {
-        display: flex;
         width: 80px;
-        margin-left: 100px;
-        justify-content: center;
         height: auto;
-        
+    }
+    .logotip {
+        position: relative;
+        transform: translateX(100%); 
+
     }
     .nav-list li {
         margin-right: 10px;
